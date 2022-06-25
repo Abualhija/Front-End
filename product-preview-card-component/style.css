@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+:root {
+  background-color: #f2e9e2;
+}
+.container {
+  background-color: #ffffff;
+  width: 500px;
+  height: 400px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: left;
+}
+
+.image {
+  width: 50%;
+}
+img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.mobile-image {
+  display: none;
+}
+
+.full-image {
+  display: block;
+}
+.deal {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  padding: 25px 25px;
+}
+
+p.type {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8em;
+  color: #a4a4af;
+  letter-spacing: 3px;
+}
+
+p.name {
+  font-family: "Fraunces";
+  font-size: 1.6em;
+  margin-top: 15px;
+}
+
+p.description {
+  color: #a4a4af;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75em;
+  line-height: 20px;
+  font-weight: 500;
+  margin-top: 15px;
+}
+
+div.price {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  font-family: "Fraunces";
+}
+
+div.price p {
+  font-size: 1.5em;
+  color: #3d8168;
+}
+div.price span {
+  text-decoration: line-through;
+  color: #a4a4af;
+  font-size: 0.65em;
+  margin-left: 15px;
+}
+
+button {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.7em;
+  color: #ffffff;
+  background-color: #3d8168;
+  border-radius: 5px;
+  border: none;
+  margin-top: 25px;
+  padding: 10px 10px;
+}
+.butt {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.butt p {
+  margin-left: 10px;
+}
+.butt span {
+  margin-left: 15px;
+  font-size: 1.8em;
+}
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 300px;
+    height: auto;
+    margin-top: 25px;
+  }
+  img {
+    border-bottom-left-radius: 0;
+    border-top-right-radius: 10px;
+  }
+  .image {
+    width: 100%;
+  }
+  .mobile-image {
+    display: block;
+  }
+  .full-image {
+    display: none;
+  }
+  .deal {
+    width: 100%;
+  }
+}
