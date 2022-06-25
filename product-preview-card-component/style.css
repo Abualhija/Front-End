@@ -93,6 +93,8 @@ button {
   border: none;
   margin-top: 25px;
   padding: 10px 10px;
+  cursor: pointer;
+
 }
 .butt {
   width: 100%;
