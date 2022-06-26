@@ -59,6 +59,11 @@
   color: #87b7b8;
 }
 
+.card1 button:hover , .card2 button:hover, .card3 button:hover {
+  background-color:inherit;
+  color:white;
+  border : 1px solid white
+}
 .card3 button {
   color: #00403f;
 }
